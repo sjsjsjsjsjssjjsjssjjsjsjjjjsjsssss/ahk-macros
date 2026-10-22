@@ -10,14 +10,14 @@ Process Priority,, High
 DllCall("Winmm\timeBeginPeriod", "UInt", 1)
 
 ; this is for the spin, ONLY CHANGE IT IF ITS TOO SLOW OR FAST!
-Spin := 90000
+Spin := 100000
 
 ; do not change this, this is for the base which the spin was orginally set for
 BaseDPI := 800
 BaseCS := 0.36
 
 ; settings for prefrence (change to your setup)
-DPI := 7400
+DPI := 8800
 CS := 0.16 ; camera sensitivity
 
 X := Round((Spin * BaseDPI * BaseCS) / (DPI * CS))
